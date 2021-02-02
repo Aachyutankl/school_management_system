@@ -1,0 +1,39 @@
+%width-height-100per{
+    width: 100%;
+    height: 100%;
+}
+
+%padding-rl-margin-lr{
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+%flex-package{
+    display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%reset-padding{
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+}
+%reset-margin{
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+%reset-padding-lr{
+    padding-right: 0;
+    padding-left: 0;
+}
+%reset-padding-tb{
+    padding-top: 0;
+    padding-bottom: 0;
+}

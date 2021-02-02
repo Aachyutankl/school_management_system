@@ -1,0 +1,60 @@
+<!--Login Component Page Start-->
+<div class="main_block">
+    <div class="main_container">
+        <div class="main_subcontainer" row>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 left-contanier" padding>
+                <section flex-family flex-column>
+                    <div class="login-account">
+                        <div class="heading">
+                            Login
+                        </div>
+                        <!--username-->
+                        <div class="form-group">
+                            <label for="name">Username<span class="error-msg">*</span></label>
+                            <div class="form-validation">
+                                <input type="text" class="form-control" placeholder="Enter your username" [(ngModel)]="username" appAutofocus/>
+                            </div>
+                        </div>
+                        <!--Password-->
+                        <div class="form-group">
+                            <label for="Password">Password<span class="error-msg">*</span></label>
+                            <div class="form-validation"><!--  [type]="hide ? 'text' : 'password'" -->
+                                <input type="password" class="form-control" [(ngModel)]="password" placeholder="Enter your password" />
+                                
+                            </div>
+                        </div>
+                        <!--Login Button-->
+                        <div row padding-top class="justify-content-center">
+                            <button class="btn-filled col-xl-5 col-lg-5 col-md-5 col-xs-5 col-5 col-sm-5" (click)="login()">
+                                    login
+                            </button>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Login Component Page End-->
+
+
+<div class="deactivatemodal modal fade" id="validUserModal" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="confirmation-txt">Invalid username or password, Please enter valid username or password</div>
+
+            </div>
+            <div class="confirbtn-footer">
+                <div row class="justify-content-center">
+                    <div class="col-lg-6">
+                        <button class="btn-dangerfilled signConfirm" data-dismiss="modal">
+                            OK
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,175 @@
+@import "../../../assets/scss/mixin";
+.main_block {
+  @extend %width-height-100per;
+  .main_container {
+    background: #d5c6ff;
+    @extend %width-height-100per;
+    @extend %padding-rl-margin-lr;
+    .main_subcontainer {
+      @extend %width-height-100per;
+      .left-contanier {
+        /*  background: url(../../../assets/images/bg2.jpg) no-repeat;
+        background-position: 100% 100%;
+        background-size: cover; */
+        /*  background: rgb(93,5,213);
+        background: linear-gradient(0deg, rgba(93,5,213,1) 0%, rgba(151,95,232,1) 100%); */
+        .logo-block {
+          .text-right {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            font-family: var(--Regualr);
+          }
+        }
+        section {
+          height: calc(100% - 0px);
+          .login-account {
+            width: calc(30% - 0px);
+            color: var(--white);
+            background: #fff;
+            padding: 50px;
+            border-radius: 10px;
+            background: rgb(24, 2, 87);
+            background: linear-gradient(90deg, rgba(24, 2, 87, 1) 15%, rgba(32, 2, 87, 0.9136029411764706) 52%);
+            .heading {
+              // color: var(--text-dark);
+              font-family: var(--Regualr);
+              font-size: 1.5rem;
+              margin-bottom: 0.5rem;
+            }
+            .form-group {
+              margin-bottom: 1rem;
+              label {
+                font-size: 0.8rem;
+                // color: var(--text-dark);
+                font-family: var(--Regualr);
+                text-transform: capitalize;
+              }
+              .form-validation {
+                position: relative;
+                .form-control {
+                  border-radius: 5px;
+                  font-size: 0.8rem;
+                  // border-color: var(--text-blue);
+                  color: #180257;
+                  &:focus {
+                    outline: 0;
+                    box-shadow: none;
+                  }
+                  /* &.ng-valid {
+                    background-color: var(white);
+                    border-color: var(--text-blue);
+                    color: var(--text-blue);
+                    outline: 0;
+                    box-shadow: none;
+                  } */
+                }
+                mat-icon {
+                  @extend %flex-package;
+                  position: absolute;
+                  right: 2%;
+                  top: 0;
+                  color: var(--eye-grey);
+                  bottom: 0;
+                  height: 100%;
+                  font-size: 1.2rem;
+                  cursor: pointer;
+                }
+              }
+            }
+            .link-primary-light {
+              color: var(--light-grey);
+              display: inherit;
+              font-size: 0.8rem;
+              padding-top: 1rem;
+              margin-bottom: 0;
+              text-transform: capitalize;
+              span {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+
+        .copyryt-txt {
+          position: absolute;
+          bottom: 2%;
+          font-size: 0.6rem;
+        }
+        .checkbox {
+          label {
+            margin-bottom: 0;
+            margin-left: 0.2rem;
+            text-transform: capitalize;
+            // color: var(--text-dark);
+            font-size: 0.8rem;
+          }
+        }
+        button {
+          font-family: var(--Regualr);
+          text-transform: capitalize;
+          &.btn-light {
+            &:focus {
+              outline: none;
+            }
+          }
+          &.btn-filled {
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .main_block {
+    .main_container {
+      max-width: calc(100% - 0px);
+      .main_subcontainer {
+        .left-contanier {
+          section {
+            height: calc(90% - 0px);
+            .login-account {
+              width: calc(100% - 0px);
+              padding: 1.5rem 1rem;
+            }
+            button {
+              &.btn-light {
+                padding: 0.2rem 1.5rem;
+              }
+              &.btn-filled {
+                padding: 0.2rem 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main_block {
+    .main_container {
+      .main_subcontainer {
+        .left-contanier {
+          section {
+            .login-account {
+              width: calc(80% - 0px);
+              padding: 1.5rem 0rem;
+            }
+          }
+          button {
+            &.btn-light {
+              padding: 0.2rem 1.5rem;
+            }
+            &.btn-filled {
+              padding: 0.2rem 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

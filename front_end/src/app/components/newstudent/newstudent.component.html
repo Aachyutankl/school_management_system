@@ -1,0 +1,69 @@
+<app-sidenav></app-sidenav>
+<div class="col-lg-9 col-xl-10 col-md-8 ml-auto bg-dark fixed-top py-2 top-navbar">
+    <div class="row align-items-center">
+        <div class="col-md-4">
+            <h4 class="text-light text-uppercase mb-0">New Student</h4>
+        </div>
+        <div class="col-md-8">
+            <li class="logout"><a [routerLink]="['/login']"><i class="fa fa-sign-out-alt"></i>Logout</a></li>
+        </div>
+    </div>
+</div>
+<div class="wrap">
+    <div class="container">
+      <form class="cool-b4-form">
+      <h2 class="text-center pt-4">Student Information</h2>
+        <div class="form-row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" class="form-control" name="fname" id="fname">
+              <label for="fname">FirstName</label>
+              <span class="input-highlight"></span>
+            </div>
+            <div class="form-group">
+              <input type="age" class="form-control" name="age" id="age">
+              <label for="age">Age</label>
+              <span class="input-highlight"></span>
+            </div>
+            <div class="form-group">
+              <input type="number" class="form-control" name="rollnumber" id="rollnumber">
+              <label for="rollnumber">Roll Number</label>
+              <span class="input-highlight"></span>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="department" id="department">
+                <label for="department">Department</label>
+                <span class="input-highlight"></span>
+              </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" class="form-control" name="lname" id="lname">
+              <label for="lname">LastName</label>
+              <span class="input-highlight"></span>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" id="email">
+              <label for="email">Email</label>
+              <span class="input-highlight"></span>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="place" id="place">
+              <label for="place">Place</label>
+              <span class="input-highlight"></span>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="doj" id="doj">
+                <label for="doj">Date of Joining</label>
+                <span class="input-highlight"></span>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 mx-auto mt-3">
+          <button type="submit" class="btn btn-lg btn-danger btn-block submit btn-filled">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>

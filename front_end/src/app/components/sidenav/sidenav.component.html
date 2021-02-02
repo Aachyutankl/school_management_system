@@ -1,0 +1,26 @@
+<!-- navbar -->
+<nav class="navbar navbar-expand-md  navbar-light">
+  <button class="navbar-toggler ml-auto mb-2 bg-light" type="button" data-toggle="collapse" data-target="#myNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse " id="myNavbar">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- sidebar navbar -->
+        <div class="col-lg-3 col-xl-2 col-md-4 sidebar fixed-top ">
+          <img src="../../../assets/images/school_icon.jpg">
+          <ul class="navbar-nav flex-column mt-4">
+            <div routerLink="/teacher" class="nav-item nav-link text-light p-1 mb-1 sidebar-link"
+              routerLinkActive="active">
+              <i class="fas fa-user-graduate"></i>&nbsp;Teachers List
+            </div>
+            <div routerLink="/student" routerLinkActive="active"
+              class="nav-item nav-link text-light p-1 mb-1 sidebar-link">
+              Students List
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

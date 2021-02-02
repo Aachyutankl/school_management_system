@@ -1,0 +1,89 @@
+/* You can add global styles to this file, and also import other style files */
+@import "assets/scss/font-family";
+@import "assets/scss/app";
+// @import '~bootstrap/dist/css/bootstrap.min.css';
+
+.form-control {
+    background-color: #c8b6e8 !important;
+}
+.submit {
+    border: none;
+    border-radius: 50px !important;
+    padding: 12px;
+}
+
+th {
+    font-family: 'Poppins-Medium';
+}
+td {
+    font-family: 'Poppins-Regular';
+    text-align: justify;
+}
+div#datatable_length {
+    font-family: 'Poppins-Regular';
+}
+div#datatable_filter {
+    font-family: 'Poppins-Regular';
+}
+div#datatable_paginate {
+    font-family: 'Poppins-Regular';
+}
+table.dataTable tbody th, table.dataTable tbody td {
+    padding: 10px 20px !important;
+}
+td.nav-item.nav-link.text-light.p-3.mb-2.sidebar-link {
+    font-family: 'Poppins-Medium';
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    outline: none;
+}
+.top-navbar {
+    font-family: 'Poppins-Bold';
+}
+.logout a{
+    float:right;
+    color:#ffffff !important;
+    list-style: none;
+}
+.logout a:hover{
+    float:right;
+    color:#ffffff !important;
+    list-style: none;
+}
+
+/* Modal */
+
+.deactivatemodal {
+    .modal-dialog {
+        max-width: 400px;
+        .modal-content {
+            border-radius: 10px;
+            .modal-body {
+                padding: 1rem 1rem 1rem 1rem;
+                .confirmation-txt {
+                    text-align: center;
+                    font-family: var(--Medium);
+                    font-size: 1rem;
+                    color: var(--text-dark);
+                }
+            }
+            .confirbtn-footer {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-end;
+                padding: 1rem 1rem;
+                .col-lg-6 {
+                    justify-content: center;
+                    display: flex;
+                }
+                .btn-filled {
+                    padding: 0.3rem 3rem;
+                }
+                .btn-dangerfilled {
+                    padding: 0.3rem 3rem;
+                }
+            }
+        }
+    }
+}
